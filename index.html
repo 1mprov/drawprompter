@@ -17,24 +17,54 @@
   </head>
 
   <body>
-    <h1 id='appTitle'>Drawing prompt generator</h1>
-    <div id="promptContainer">
-      <p class="containerDesc">Click below for a random idea to draw</p>
+    <h1 id='appTitle'>Drawing prompt generator!</h1>
+
+    <!-- The generator -->
+    <div class="divContainer">
+      <!-- The prompt btn -->
+      <p class="containerDesc">Click for a random idea to draw: </p>
+      <a href="#" id="generateButton">Give me ideas!</a>
     </div>
 
-    <div id="timerContainer">
-      <p class="containerDesc">A timer to make your drawing as simple as it can be.<br/> Click start and get doodling until time is up!</p>
+    <div class="divContainer" id="thePromptContainer">
+        <p>Draw this: <span id="thePromptLabel"></span></p>
+        <p id="thePrompt"></p>
     </div>
 
-    <div class="nav">
-      <ul>
-          <li>
-              <a href="#">About</a>
-          </li><li>
-              <a href="#">Contact</a>
-          </li>
-      </ul>
-  </div>
+    <div class="divContainer">
+      <!-- theme selector -->
+      <p id="theError" class="hideElement">Select at least one theme to generate ideas! :)</p>
+      <p>The prompts can be any of: </p>
+        <div class="topicsNav nav">
+          <ul id="topicsGenerator">
+            <!-- topics generated here from the topicsList -->
+          </ul>
+        </div>
+        
+        <p>Click to toggle, select one or more to get ideas only from specific themes you want</p>
+    </div>
+
+    <!-- Todo: The timer feature --> 
+    <div class="divContainer" id="theTimerContainer">
+      <p class="containerDesc">Optional: set the timer below to keep your drawing as simple as it can be.<br/> Click start and get doodling until time is up!</p>
+    </div>
+
+    <!-- Footer things --> 
+    <div class="divContainer">
+      <p class="containerDesc footyTxt">Enjoyed using drawprompt? Share your drawings on Insta with 
+        <a class="links" href="https://www.instagram.com/explore/tags/drawprompter/">#drawprompter</a><br/> 
+        , tell your friends so they can also play! You can also say thanks with a <a href="https://ko-fi.com/jamica" target="new">ko-fi :)</a></p> 
+
+        <div class="nav footyTxt">
+          <ul>
+              <li>
+                  <a href="about.html">About Draw Prompt</a>
+              </li>
+          </ul>
+      </div>
+    </div>
+
+    <script src="js/prompts.js"></script>
     <script src="js/index.js"></script>
   </body>
   </html>

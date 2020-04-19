@@ -1,2 +1,2 @@
 # drawprompter
-A page that generate prompts for any creative pursuit within a time limit
+A page that generates prompts for drawing, optionally within a time limit to keep the drawings simple.
